@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reto 3 </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado del Servidor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light p-5">
+
+  <div class="container bg-white p-5 rounded-3 border shadow-sm" style="max-width: 800px;">
     <div>
-    <div>
-        <h1>Estado del Servidor</h1>
-        <p>Panel de control de servicios activos.</p>
-        <hr>
-        <div>
-            <span>Error Crítico:</span>
-            La base de datos no responde.
-        </div>
+      <h1 class="fw-bold text-dark">Estado del Servidor</h1>
+      
+      <p class="text-muted">Panel de control de servicios activos.</p>
+      
+      <hr class="text-muted my-4">
 
-        <div>
-            <span>Aviso:</span>
-            El espacio en disco está al <span>90% de su capacidad</span>.
-        </div>
+      <div class="alert alert-danger text-white bg-danger border-0 py-3 px-4 mb-3" role="alert">
+        <span class="fw-bold">ERROR CRÍTICO:</span> La base de datos no responde.
+      </div>
 
-        <div>
-            <span>Sistema:</span>
-            Todos los demás servicios están <span>operativos</span>.
-        </div>
+      <div class="alert alert-warning text-dark bg-warning border-0 py-3 px-4 mb-3" role="alert">
+        <span class="fw-bold">Aviso:</span> El espacio en disco está al <span class="text-decoration-underline fw-bold">90% de su capacidad</span>.
+      </div>
 
-        <p>
-            Última actualización: <span>Hace 5 minutos</span>
-        </p>
+      <div class="alert alert-primary text-white bg-primary border-0 py-3 px-4 mb-4" role="alert">
+        <span class="fw-bold">Sistema:</span> Todos los demás servicios están <span class="text-uppercase fw-bold">operativos</span>.
+      </div>
 
+      <p class="text-center text-muted small mt-4">
+        Última actualización: <span>Hace 5 minutos</span>
+      </p>
     </div>
-</div>
+  </div>
+
 </body>
 </html>
